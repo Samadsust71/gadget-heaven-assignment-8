@@ -137,8 +137,8 @@ const Navbar = () => {
         </ul>
       </div>
       <div className="navbar-end space-x-4 text-2xl">
-        <button>{<AiOutlineShoppingCart/>} </button>
-        <button>{<CiHeart />} </button>
+        <button className="p-2 bg-white rounded-full text-gray-700">{<AiOutlineShoppingCart/>} </button>
+        <button className="p-2 bg-white rounded-full text-gray-700">{<CiHeart />} </button>
       </div>
     </div>
     
