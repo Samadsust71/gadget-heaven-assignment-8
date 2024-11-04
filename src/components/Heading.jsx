@@ -1,7 +1,7 @@
+import PropTypes from 'prop-types';
 
 
 
-// eslint-disable-next-line react/prop-types
 const Heading = ({title , subTitle=''}) => {
   return (
     <div className="text-center">
@@ -10,5 +10,8 @@ const Heading = ({title , subTitle=''}) => {
     </div>
   )
 }
-
+Heading.propTypes={
+  title:PropTypes.string,
+  subTitle:PropTypes.string
+}
 export default Heading
