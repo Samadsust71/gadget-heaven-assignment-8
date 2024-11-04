@@ -211,36 +211,7 @@
         "availability": true,
         "rating": 4.1
     },
-    {
-        "product_id": "15",
-        "product_title": "Wireless Headphones",
-        "product_image": "https://media.wired.com/photos/667e093a26ae833a59457185/16:9/w_1600%2Cc_limit/Focal%2520Bathys%2520Headphones%2520Abstract%2520Background%2520SOURCE%2520Amazon.jpg",
-        "category": "Accessories",
-        "price": 80,
-        "description": "Comfortable wireless headphones with great sound quality.",
-        "Specification": [
-            "Over-ear design",
-            "12-hour battery life",
-            "Bluetooth 5.0"
-        ],
-        "availability": true,
-        "rating": 4.6
-    },
-    {
-        "product_id": "16",
-        "product_title": "Smart Watch Ultra",
-        "product_image": "https://www.apple.com/v/apple-watch-se/r/images/overview/water-resistance/water__fma98hnbbhyu_large.jpg",
-        "category": "Smart Watches",
-        "price": 400,
-        "description": "Premium smartwatch with advanced health tracking.",
-        "Specification": [
-            "ECG monitor",
-            "Water-resistant",
-            "7-day battery life"
-        ],
-        "availability": true,
-        "rating": 4.7
-    },
+   
     {
         "product_id": "17",
         "product_title": "MacBook Pro 16",

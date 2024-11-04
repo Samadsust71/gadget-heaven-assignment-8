@@ -7,7 +7,7 @@ const Navbar = () => {
  
   return (
     
-        <div className={`navbar rounded-t-xl mt-3 mx-auto ${ pathname==='/'?"bg-[#9538E2] text-white lg:w-[98%] lg:px-28":'bg-white lg:w-11/12'}`}>
+        <div className={`navbar rounded-t-xl pt-3 mx-auto ${ pathname==='/'?"bg-[#9538E2] text-white mt-3 lg:w-[98%] lg:px-28":'bg-gray-100 lg:w-11/12'}`}>
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
