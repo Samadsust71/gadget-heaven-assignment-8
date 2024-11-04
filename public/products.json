@@ -1,0 +1,304 @@
+[
+    {
+        "product_id": "1",
+        "product_title": "Gaming Laptop Pro",
+        "product_image": "https://dlcdnwebimgs.asus.com/gain/ddd8dcda-aefc-4287-9bba-10096ce0d4bc/w800",
+        "category": "Laptops",
+        "price": 1500,
+        "description": "High-performance gaming laptop with top-notch graphics.",
+        "Specification": [
+            "17-inch display",
+            "32GB RAM",
+            "1TB SSD",
+            "RTX 3080 graphics"
+        ],
+        "availability": true,
+        "rating": 4.9
+    },
+    {
+        "product_id": "2",
+        "product_title": "Ultra Laptop Slim",
+        "product_image": "https://dlcdnwebimgs.asus.com/gain/a72c93c3-8642-4d1f-bdd5-ee0daf4a2930/w800",
+        "category": "Laptops",
+        "price": 1200,
+        "description": "Lightweight laptop with long battery life.",
+        "Specification": [
+            "14-inch display",
+            "16GB RAM",
+            "512GB SSD",
+            "Integrated graphics"
+        ],
+        "availability": true,
+        "rating": 4.5
+    },
+    {
+        "product_id": "3",
+        "product_title": "Smartphone Z",
+        "product_image": "https://image01.oneplus.net/media/202409/24/07643db2d15e1fb0284f9b0885cb2d76.png?x-amz-process=image/format,webp/quality,Q_80",
+        "category": "Phones",
+        "price": 900,
+        "description": "Flagship smartphone with impressive camera and display.",
+        "Specification": [
+            "6.8-inch display",
+            "128GB storage",
+            "Quad camera setup"
+        ],
+        "availability": true,
+        "rating": 4.7
+    },
+    {
+        "product_id": "4",
+        "product_title": "Budget Smartphone",
+        "product_image": "https://image01.oneplus.net/media/202405/28/5c365ea6e4397dc82d0260a81ae5e5e8.png?x-amz-process=image/format,webp/quality,Q_80",
+        "category": "Phones",
+        "price": 200,
+        "description": "Affordable smartphone with all essential features.",
+        "Specification": [
+            "6.1-inch display",
+            "64GB storage",
+            "Dual camera"
+        ],
+        "availability": true,
+        "rating": 4.2
+    },
+    {
+        "product_id": "5",
+        "product_title": "Wireless Earbuds Pro",
+        "product_image": "https://image01.oneplus.net/media/202408/16/ee0fbf7ee1845d4993715f01791f85a2.png?x-amz-process=image/format,webp/quality,Q_80",
+        "category": "Accessories",
+        "price": 150,
+        "description": "Noise-canceling wireless earbuds with long battery life.",
+        "Specification": [
+            "Active noise cancellation",
+            "5-hour battery life",
+            "Water-resistant"
+        ],
+        "availability": true,
+        "rating": 4.6
+    },
+    {
+        "product_id": "6",
+        "product_title": "Bluetooth Speaker Max",
+        "product_image": "https://www.sencor.com/Sencor/media/static-media/6770caad-d0be-4d0d-b5f0-01bbc4c1c555@w600.webp",
+        "category": "Accessories",
+        "price": 100,
+        "description": "Portable Bluetooth speaker with powerful sound.",
+        "Specification": [
+            "10-hour battery",
+            "Waterproof",
+            "360-degree sound"
+        ],
+        "availability": true,
+        "rating": 4.4
+    },
+    {
+        "product_id": "7",
+        "product_title": "Smart Watch S",
+        "product_image": "https://image01.oneplus.net/media/202409/02/c5a419935796726515b004c25006bc12.png?x-amz-process=image/format,webp/quality,Q_80",
+        "category": "Smart Watches",
+        "price": 250,
+        "description": "Smartwatch with health tracking and GPS.",
+        "Specification": [
+            "Heart rate monitor",
+            "GPS",
+            "5-day battery life"
+        ],
+        "availability": true,
+        "rating": 4.5
+    },
+    {
+        "product_id": "8",
+        "product_title": "Smart Watch Lite",
+        "product_image": "https://image01.oneplus.net/media/202409/02/d5cc1eeaeaf4cfaba4263350e6671d58.png?x-amz-process=image/format,webp/quality,Q_80",
+        "category": "Smart Watches",
+        "price": 150,
+        "description": "Budget-friendly smartwatch with essential features.",
+        "Specification": [
+            "Activity tracker",
+            "2-day battery life",
+            "Notifications"
+        ],
+        "availability": true,
+        "rating": 4.1
+    },
+    {
+        "product_id": "9",
+        "product_title": "MacBook Air M1",
+        "product_image": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/mba15-midnight-select-202306?wid=904&hei=840&fmt=jpeg&qlt=90&.v=1684518479433",
+        "category": "MacBooks",
+        "price": 999,
+        "description": "Lightweight MacBook with M1 chip and long battery life.",
+        "Specification": [
+            "13.3-inch Retina display",
+            "8GB RAM",
+            "256GB SSD"
+        ],
+        "availability": true,
+        "rating": 4.8
+    },
+    {
+        "product_id": "10",
+        "product_title": "MacBook Pro M1",
+        "product_image": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/mba15-starlight-select-202306?wid=904&hei=840&fmt=jpeg&qlt=90&.v=1684518479450",
+        "category": "MacBooks",
+        "price": 1299,
+        "description": "Powerful MacBook with M1 chip for intensive tasks.",
+        "Specification": [
+            "13.3-inch Retina display",
+            "16GB RAM",
+            "512GB SSD"
+        ],
+        "availability": true,
+        "rating": 4.9
+    },
+    {
+        "product_id": "11",
+        "product_title": "iPhone 14 Pro",
+        "product_image": "https://www.apple.com/v/iphone-16-pro/c/images/overview/product-viewer/iphone-pro/black_titanium__ezezv5esulua_large.jpg",
+        "category": "iPhones",
+        "price": 999,
+        "description": "High-end iPhone with advanced camera and display.",
+        "Specification": [
+            "6.1-inch OLED display",
+            "128GB storage",
+            "Triple camera"
+        ],
+        "availability": true,
+        "rating": 4.8
+    },
+    {
+        "product_id": "12",
+        "product_title": "iPhone 13 Mini",
+        "product_image": "https://www.apple.com/v/iphone-16-pro/c/images/overview/product-viewer/iphone-pro/white_titanium__b0s9tw63hs4i_large.jpg",
+        "category": "iPhones",
+        "price": 699,
+        "description": "Compact iPhone with great performance and camera.",
+        "Specification": [
+            "5.4-inch OLED display",
+            "128GB storage",
+            "Dual camera"
+        ],
+        "availability": true,
+        "rating": 4.5
+    },
+    {
+        "product_id": "13",
+        "product_title": "Office Laptop",
+        "product_image": "https://dlcdnwebimgs.asus.com/gain/c80fd317-868e-4bc8-a27b-24c5242e7d83/w800",
+        "category": "Laptops",
+        "price": 800,
+        "description": "Efficient laptop for office and productivity tasks.",
+        "Specification": [
+            "15.6-inch display",
+            "8GB RAM",
+            "256GB SSD"
+        ],
+        "availability": true,
+        "rating": 4.3
+    },
+    {
+        "product_id": "14",
+        "product_title": "Budget Laptop",
+        "product_image": "https://dlcdnwebimgs.asus.com/gain/7587b7be-cc5d-405d-8882-4b89ae85ba97/w800",
+        "category": "Laptops",
+        "price": 400,
+        "description": "Affordable laptop for everyday use.",
+        "Specification": [
+            "14-inch display",
+            "4GB RAM",
+            "128GB SSD"
+        ],
+        "availability": true,
+        "rating": 4.1
+    },
+    {
+        "product_id": "15",
+        "product_title": "Wireless Headphones",
+        "product_image": "https://media.wired.com/photos/667e093a26ae833a59457185/16:9/w_1600%2Cc_limit/Focal%2520Bathys%2520Headphones%2520Abstract%2520Background%2520SOURCE%2520Amazon.jpg",
+        "category": "Accessories",
+        "price": 80,
+        "description": "Comfortable wireless headphones with great sound quality.",
+        "Specification": [
+            "Over-ear design",
+            "12-hour battery life",
+            "Bluetooth 5.0"
+        ],
+        "availability": true,
+        "rating": 4.6
+    },
+    {
+        "product_id": "16",
+        "product_title": "Smart Watch Ultra",
+        "product_image": "https://www.apple.com/v/apple-watch-se/r/images/overview/water-resistance/water__fma98hnbbhyu_large.jpg",
+        "category": "Smart Watches",
+        "price": 400,
+        "description": "Premium smartwatch with advanced health tracking.",
+        "Specification": [
+            "ECG monitor",
+            "Water-resistant",
+            "7-day battery life"
+        ],
+        "availability": true,
+        "rating": 4.7
+    },
+    {
+        "product_id": "17",
+        "product_title": "MacBook Pro 16",
+        "product_image": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/mba15-silver-select-202306?wid=904&hei=840&fmt=jpeg&qlt=90&.v=1684518479266",
+        "category": "MacBooks",
+        "price": 2399,
+        "description": "High-performance MacBook Pro with large display.",
+        "Specification": [
+            "16-inch Retina display",
+            "16GB RAM",
+            "1TB SSD"
+        ],
+        "availability": true,
+        "rating": 4.9
+    },
+    {
+        "product_id": "18",
+        "product_title": "iPhone SE 2022",
+        "product_image": "https://www.apple.com/v/iphone-16-pro/c/images/overview/product-viewer/iphone-pro/natural_titanium__22ovjg0i0huy_large.jpg",
+        "category": "iPhones",
+        "price": 429,
+        "description": "Budget-friendly iPhone with powerful performance.",
+        "Specification": [
+            "4.7-inch Retina display",
+            "64GB storage",
+            "Single camera"
+        ],
+        "availability": true,
+        "rating": 4.3
+    },
+    {
+        "product_id": "19",
+        "product_title": "Gaming Smartphone X",
+        "product_image": "https://image01.oneplus.net/ebp/202306/20/1-M00-46-03-CkvTlmSRQyyAIvSDAAJFsrJcjI4980.png?x-amz-process=image/format,webp/quality,Q_80",
+        "category": "Phones",
+        "price": 700,
+        "description": "Gaming smartphone with high refresh rate display.",
+        "Specification": [
+            "6.5-inch display",
+            "120Hz refresh rate",
+            "128GB storage"
+        ],
+        "availability": true,
+        "rating": 4.6
+    },
+    {
+        "product_id": "20",
+        "product_title": "Tablet Stand",
+        "product_image": "https://m.media-amazon.com/images/I/51dGL0moAQL._AC_SX679_.jpg",
+        "category": "Accessories",
+        "price": 25,
+        "description": "Adjustable stand for tablets and smartphones.",
+        "Specification": [
+            "Adjustable height",
+            "Non-slip base",
+            "Lightweight"
+        ],
+        "availability": true,
+        "rating": 4.4
+    }
+]
