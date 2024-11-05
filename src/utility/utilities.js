@@ -17,16 +17,22 @@ const getWishListData = () => {
 };
 
 const addCartDataToDB = (id)=>{
-    const getDataFromDB = getCartData()
-    if (getDataFromDB.includes(id)) {
-        return toast.error(`Already added to the cart`)
-    }
-    else{
-       getDataFromDB.push(id)
-       const dataInJsonFormat = JSON.stringify(getDataFromDB)
+
+    const getDataFromDB = [...getCartData(),id]
+    const dataInJsonFormat = JSON.stringify(getDataFromDB)
        localStorage.setItem('cart',dataInJsonFormat)
        toast.success(`Added to the cart`)
-    }
+
+
+    // if (getDataFromDB.includes(id)) {
+    //     return toast.error(`Already added to the cart`)
+    // }
+    // else{
+    //    getDataFromDB.push(id)
+    //    const dataInJsonFormat = JSON.stringify(getDataFromDB)
+    //    localStorage.setItem('cart',dataInJsonFormat)
+    //    toast.success(`Added to the cart`)
+    // }
 }
 const addWishListDataToDB = (id)=>{
     const getDataFromDB = getWishListData()
@@ -41,5 +47,21 @@ const addWishListDataToDB = (id)=>{
     }
 }
 
+const removedCartItem = (id) => {
+  const cart = getCartData();
+  const matchingItems = cart.filter(idx => idx === id);
+  const remainingItems = cart.filter(idx => idx !== id);
 
-export {getCartData,getWishListData,addCartDataToDB,addWishListDataToDB}
+  if (matchingItems.length > 1) {
+    const updatedCart = [...remainingItems, ...matchingItems.slice(1)];
+    localStorage.setItem("cart", JSON.stringify(updatedCart));
+  } else {
+    localStorage.setItem("cart", JSON.stringify(remainingItems));
+  }
+};
+const clearCartItems = ()=>{
+  localStorage.removeItem('cart')
+}
+
+
+export {getCartData,getWishListData,addCartDataToDB,addWishListDataToDB,removedCartItem,clearCartItems}

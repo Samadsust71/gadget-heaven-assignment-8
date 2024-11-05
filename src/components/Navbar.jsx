@@ -1,9 +1,13 @@
 import { Link, NavLink, useLocation } from "react-router-dom";
 import { AiOutlineShoppingCart } from "react-icons/ai";
 import { CiHeart } from "react-icons/ci";
+import { useContext } from "react";
+import { CartWishlistContext } from "../context/CartWishlistContext";
 
 const Navbar = () => {
   const {pathname}=useLocation()
+  const {cart,wishList}= useContext(CartWishlistContext)
+ 
  
   return (
     
@@ -28,7 +32,7 @@ const Navbar = () => {
           </div>
           <ul
             tabIndex={0}
-            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow space-y-4"
+            className={`menu menu-sm dropdown-content bg-[#9538E2] rounded-box z-[1] mt-3 w-52 p-2 shadow space-y-4 ${ pathname==='/'?"text-white bg-[#9538E2]":'text-black bg-base-100'} `}
           >
             <NavLink to={'/'} className={({ isActive}) =>
                       `
@@ -137,8 +141,8 @@ const Navbar = () => {
         </ul>
       </div>
       <div className="navbar-end space-x-4 text-2xl">
-        <button className="p-2 bg-white rounded-full text-gray-700">{<AiOutlineShoppingCart/>} </button>
-        <button className="p-2 bg-white rounded-full text-gray-700">{<CiHeart />} </button>
+        <button className="p-2 bg-white rounded-full text-gray-700 flex">{<AiOutlineShoppingCart/>} <span className="text-xs font-semibold text-[#9538E2]">{cart.length}</span> </button>
+        <button className="p-2 bg-white rounded-full text-gray-700 flex">{<CiHeart />} <span className="text-xs font-semibold text-[#9538E2]">{wishList.length}</span> </button>
       </div>
     </div>
     

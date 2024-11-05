@@ -1,8 +1,8 @@
 import PropTypes from "prop-types"
 import { TiDeleteOutline } from "react-icons/ti"
 
-const CartProduct = ({product}) => {
-    const {product_title,description,price,product_image}=product
+const CartProduct = ({product,handleDeleteItem}) => {
+    const {product_id,product_title,description,price,product_image}=product
   return (
     <div className="flex justify-between p-8 rounded-xl bg-white">
       <div className="flex gap-8">
@@ -15,13 +15,14 @@ const CartProduct = ({product}) => {
             <p className="text-xl text-gray-900 font-semibold">Price : ${price}</p>
          </div>
       </div>
-      <div className="text-red-400 text-4xl font-light">
+      <button onClick={()=>handleDeleteItem(product_id)} className="text-red-400 text-4xl font-light">
       <TiDeleteOutline />
-      </div>
+      </button>
     </div>
   )
 }
 CartProduct.propTypes ={
-    product:PropTypes.object
+    product:PropTypes.object,
+    handleDeleteItem: PropTypes.func
 }
 export default CartProduct
