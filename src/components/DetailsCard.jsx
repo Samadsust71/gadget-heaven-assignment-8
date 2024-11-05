@@ -2,9 +2,19 @@ import PropTypes from "prop-types"
 import { AiOutlineShoppingCart } from "react-icons/ai";
 import { CiHeart } from "react-icons/ci";
 import {FaStar, FaStarHalf } from "react-icons/fa";
+import { addCartDataToDB, addWishListDataToDB } from "../utility/utilities";
+
 
 const DetailsCard = ({details}) => {
-    const {product_title,product_image,price,description,Specification,availability,rating}=details
+    const {product_id,product_title,product_image,price,description,Specification,availability,rating}=details
+    
+    const handleCart = ()=>{
+        addCartDataToDB(product_id)
+       
+    }
+    const handleWishlist = ()=>{
+        addWishListDataToDB(product_id)
+    }
   return (
     <div className="flex gap-8 p-8 bg-white rounded-xl z-10">
         <div className="basis-[30%] space-y-4 flex justify-center items-center">
@@ -35,8 +45,8 @@ const DetailsCard = ({details}) => {
                 </div>
             </div>
             <div className="flex items-center gap-2">
-                <button className="text-xl p-2 border border-[#9538E2] text-[#9538E2] rounded-full cursor-pointer hover:bg-[#9538E2] hover:text-white"><AiOutlineShoppingCart/></button>
-                <button className="text-xl p-2 border border-[#9538E2] text-[#9538E2] rounded-full cursor-pointer hover:bg-[#9538E2] hover:text-white"><CiHeart/></button>
+                <button  onClick={()=>handleCart()} className="text-xl p-2 border border-[#9538E2] text-[#9538E2] rounded-full cursor-pointer hover:bg-[#9538E2] hover:text-white"><AiOutlineShoppingCart/></button>
+                <button onClick={()=>handleWishlist()} className="text-xl p-2 border border-[#9538E2] text-[#9538E2] rounded-full cursor-pointer hover:bg-[#9538E2] hover:text-white"><CiHeart/></button>
             </div>
 
         </div>
