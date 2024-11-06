@@ -5,6 +5,7 @@ import { useContext, useEffect, useState } from "react"
 import { getWishListData } from "../utility/utilities"
 import { addCartDataToDB, addWishListDataToDB } from "../utility/utilities";
 import { CartWishlistContext } from "../context/CartWishlistContext"
+import { Helmet } from "react-helmet-async"
 
 
 const ProductDetails = () => {
@@ -35,6 +36,9 @@ const ProductDetails = () => {
     
   return (
     <div className="bg-[#9538E2] pt-8 relative pb-40 mb-80">
+      <Helmet>
+      <title>Product Details || Gadget Heaven</title>
+      </Helmet>
      <div className="lg:w-[60%] mx-auto text-white pb-10">
         <Heading title={'Product Details'} subTitle="Explore the latest gadgets that will take your experience to the next level. From smart devices to the coolest accessories, we have it all!"/>
      </div>

@@ -8,6 +8,7 @@ import Products from "../components/Products";
 import ProductDetails from "../pages/ProductDetails";
 import Cart from "../components/Cart";
 import Wishlist from "../components/Wishlist";
+import About from "../pages/About";
 
 const routes = createBrowserRouter([
   {
@@ -52,6 +53,10 @@ const routes = createBrowserRouter([
       {
         path: "/statistics",
         element: <Statistics />,
+      },
+      {
+        path: "/about",
+        element: <About/>,
       },
       {
         path: "/productDetails/:id",

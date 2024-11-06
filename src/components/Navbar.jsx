@@ -71,7 +71,7 @@ const Navbar = () => {
                     }>
               Dashboard
             </NavLink>
-            <NavLink to={'/uniquePage'} className={({ isActive}) =>
+            <NavLink to={'/about'} className={({ isActive}) =>
                       `
                        ${
                         isActive
@@ -80,7 +80,7 @@ const Navbar = () => {
                        }
                       `
                     }>
-              Unique page
+              About Us
             </NavLink>
            
             
@@ -127,7 +127,7 @@ const Navbar = () => {
                     }>
               Dashboard
             </NavLink>
-            <NavLink to={'/uniquePage'} className={({ isActive}) =>
+            <NavLink to={'/about'} className={({ isActive}) =>
                       `
                        ${
                         isActive
@@ -136,7 +136,7 @@ const Navbar = () => {
                        }
                       `
                     }>
-              Unique page
+             About Us
             </NavLink>
         </ul>
       </div>

@@ -3,6 +3,7 @@ import Banner from "../components/Banner";
 import Heading from "../components/Heading";
 import { useEffect, useState } from "react";
 import Category from "../components/Category";
+import { Helmet } from "react-helmet-async";
 
 const Home = () => {
   const category = useLoaderData();
@@ -14,6 +15,9 @@ const Home = () => {
 
   return (
     <div>
+      <Helmet>
+      <title>Home||Gadget Heaven</title>
+      </Helmet>
       <Banner />
       <Heading title={"Explore Cutting-Edge Gadgets"} />
       <div className="flex gap-6 lg:w-[98%] lg:px-28 mx-auto pt-10">
