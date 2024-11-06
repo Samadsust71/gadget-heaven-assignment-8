@@ -49,10 +49,11 @@ const About = () => {
             <Helmet><title>About Us | | Gadget Heaven</title></Helmet>
         <h1 className="text-4xl">Gadget<span className="text-[#9538E2]">Heaven</span>✨</h1>
         <p className="w-[70%]">GadgetHaven is a modern e-commerce platform dedicated to tech enthusiasts, offering a curated selection of the latest gadgets—from laptops and smartphones to accessories and wearables. Designed with a sleek user interface and smooth navigation, GadgetHaven provides a seamless shopping experience with easy access to product details, a categorized browsing system, and quick access to personalized features like a wishlist and shopping cart. GadgetHaven is the ultimate one-stop shop for tech lovers looking to explore and purchase cutting-edge devices with ease.</p>
-        <button onClick={handleLogOut} className="btn text-white bg-[#9538E2] hover:text-[#9538E2]">Log Out</button>
+        <button onClick={handleLogOut} className="btn text-white bg-gradient-to-b from-[#9538E2] to-violet-500 hover:text-[#9538E2]">Log Out</button>
     </div>
      :
-    <div className="flex justify-center items-center min-h-[calc(100vh-360px)] bg-[#9538E2] py-20">
+   
+      <div className="flex justify-center items-center min-h-[calc(100vh-360px)] bg-gradient-to-b from-[#9538E2] to-violet-500 py-20">
         <Helmet><title>Sign Up | | Gadget Heaven</title></Helmet>
     <div className="card bg-base-100  w-[50%] shrink-0 shadow-2xl p-10">
       <div  className="card-body">

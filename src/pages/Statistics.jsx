@@ -1,6 +1,7 @@
 import { Helmet } from "react-helmet-async";
 import { useLoaderData } from "react-router-dom";
 import { Bar, BarChart, CartesianGrid, Cell, ResponsiveContainer, XAxis, YAxis } from "recharts";
+import Heading from "../components/Heading";
 const colors = [
   "#0085F6",
   "#00C49F",
@@ -52,9 +53,17 @@ const Statistics = () => {
       <Helmet>
       <title>Statistics | | Gadget Heaven</title>
       </Helmet>
-
-      <div className="flex justify-center items-center my-10 w-full h-full">
-      <ResponsiveContainer width="100%" height={500}>
+      <div className="bg-[#9538E2] py-8">
+      <div className="lg:w-[60%] mx-auto text-center text-white">
+        <Heading
+          title={"Statistics"}
+          subTitle="Explore the latest gadgets that will take your experience to the next level. From smart devices to the coolest accessories, we have it all!"
+        />
+        </div>
+      </div>
+      <div className="flex flex-col justify-center items-center my-5 w-full h-full">
+        
+      <ResponsiveContainer width="100%" height={300}>
       <BarChart width={1000} height={400} data={data} margin={{ top: 20, right: 30, left: 20, bottom: 5 }}>
   <CartesianGrid strokeDasharray="3 3" />
   <XAxis

@@ -19,26 +19,11 @@ const Wishlist = () => {
 
   const handleDeleteItem =(id)=>{
 
-
     const cartItemsWithoutCurrent = WishlistProducts.filter(
       (products) => products.product_id !== id
     );
-    // const currentCartItem = WishlistProducts.filter((product) => product.product_id === id);
-    // const deletedCartItem = WishlistProducts.find((product) => product.product_id === id);
-    
 
-    // if (currentCartItem.length <= 1) {
       setWishlistProducts(cartItemsWithoutCurrent);
-    // } else {
-    //   const updatedSameCartItems = currentCartItem.slice(1); 
-    //   const updatedCartItems = [
-    //     ...cartItemsWithoutCurrent,
-    //     ...updatedSameCartItems,
-    //   ];
-      // setWishlistProducts(updatedCartItems);
-      
-      
-    // }
     removeWishListItem(id)
     addToWishlist()
   }

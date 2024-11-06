@@ -20,7 +20,7 @@ const PurchaseModal = ({ closeModal, isOpen, handlePurchase, totalPrice }) => {
             <p>Total : ${totalPrice}</p>
             <div className="modal-action w-full">
               <button
-                className="btn w-full rounded-3xl"
+                className="btn w-full rounded-3xl bg-gradient-to-b from-[#9538E2] to-violet-400 text-white"
                 onClick={() => handleClose()}
               >
                 Close

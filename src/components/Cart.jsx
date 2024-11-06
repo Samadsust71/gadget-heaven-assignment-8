@@ -4,6 +4,7 @@ import { useContext, useEffect, useState } from "react";
 import CartProduct from "./CartProduct";
 import { CartWishlistContext } from "../context/CartWishlistContext";
 import PurchaseModal from "./PurchaseModal";
+import { PiSlidersFill } from "react-icons/pi";
 
 const Cart = () => {
   const allData = useLoaderData();
@@ -85,10 +86,10 @@ const Cart = () => {
               Total Cost : ${totalPrice}
             </h3>
             <button onClick={()=> hanleSortByPrice()}
-             className="px-4 py-3 rounded-full border border-[#9538E2] text-[#9538E2] cursor-pointer font-semibold">
-              Sort By Price
+             className="flex items-center gap-2 px-4 py-3 rounded-full border border-[#9538E2] text-[#9538E2] cursor-pointer font-semibold">
+              <span>Sort By Price</span> <span><PiSlidersFill/></span>
             </button>
-            <button onClick={()=>openModal()} disabled ={!totalPrice} className={`px-4 py-3 rounded-full ${totalPrice?"bg-[#9538E2] text-gray-50 cursor-pointer":"bg-gray-300 text-gray-500 border"}`}>
+            <button onClick={()=>openModal()} disabled ={!totalPrice} className={`px-4 py-3 rounded-full ${totalPrice?" bg-gradient-to-b from-[#9538E2] to-violet-400 text-gray-50 cursor-pointer":"bg-gray-300 text-gray-500 border"}`}>
               Purchase
             </button>
           </div>
