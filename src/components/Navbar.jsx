@@ -3,7 +3,7 @@ import { AiOutlineShoppingCart } from "react-icons/ai";
 import { CiHeart } from "react-icons/ci";
 import { useContext } from "react";
 import { CartWishlistContext } from "../context/CartWishlistContext";
-
+import logo from '../../src/assets/favicon.png'
 const Navbar = () => {
   const {pathname}=useLocation()
   const {cart,wishList}= useContext(CartWishlistContext)
@@ -12,7 +12,7 @@ const Navbar = () => {
  
   return (
     
-        <div className={`navbar rounded-t-xl pt-3 mx-auto ${ pathname==='/'||pathname.includes('/products')?"bg-[#9538E2] text-white mt-3 lg:w-[98%] lg:px-28":'bg-gray-100 lg:w-11/12'}`}>
+        <div className={`navbar rounded-t-xl pt-3 mx-auto ${ pathname==='/'||pathname.includes('products')?"bg-[#9538E2] text-white mt-3 lg:w-[98%] lg:px-28":'bg-gray-100 lg:w-11/12'}`}>
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -33,17 +33,14 @@ const Navbar = () => {
           </div>
           <ul
             tabIndex={0}
-            className={`menu menu-sm dropdown-content transition duration-100 bg-[#9538E2] rounded-box z-[1] mt-3 w-52 p-2 shadow space-y-4 ${ pathname==='/'||pathname.includes('/products')?"text-white bg-[#9538E2]":'text-black bg-base-100'} `}
+            className={`menu menu-sm dropdown-content transition duration-100 bg-[#9538E2] rounded-box z-[1] mt-3 w-52 p-2 shadow space-y-4 ${ pathname==='/'||pathname.includes('products')?"text-white bg-[#9538E2]":'text-black bg-base-100'} `}
           >
             <NavLink to={'/'} className={({ isActive}) =>
                       `
                        ${
-                        (pathname==='/'||pathname.includes('/products')) ?
+                        (pathname==='/'||pathname.includes('products')) ||
                         isActive
                         ? "text-white font-semibold underline"
-                        : ""
-                        :isActive
-                        ? "text-[#9538E2] font-semibold"
                         : ""
                        }
                       `
@@ -87,20 +84,23 @@ const Navbar = () => {
             
           </ul>
         </div>
-        <Link to={'/'} className="text-xl font-bold">Gadget Heaven</Link>
+        <Link to={'/'} className="text-xl font-bold flex items-center gap-2">
+        <img src={logo} alt="logo"/>
+        <span>Gadget Heaven</span>
+        </Link>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1 space-x-4 transition duration-100">
         <NavLink to={'/'} className={({ isActive}) =>
                       `
         ${
-          pathname==='/'||pathname.includes('/products')?
+          pathname==='/'||pathname.includes('products')||
           isActive
           ? "text-white font-semibold underline"
           : ""
-          :isActive
-          ? "text-[#9538E2] font-semibold"
-          : ""
+          // :isActive
+          // ? "text-[#9538E2] font-semibold underline"
+          // : ""
          }
                       `
                     }>
