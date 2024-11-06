@@ -4,7 +4,7 @@
         "product_title": "Gaming Laptop Pro",
         "product_image": "https://dlcdnwebimgs.asus.com/gain/ddd8dcda-aefc-4287-9bba-10096ce0d4bc/w800",
         "category": "Laptops",
-        "price": 1500,
+        "price": 800,
         "description": "High-performance gaming laptop with top-notch graphics.",
         "Specification": [
             "17-inch display",
@@ -20,7 +20,7 @@
         "product_title": "Ultra Laptop Slim",
         "product_image": "https://dlcdnwebimgs.asus.com/gain/a72c93c3-8642-4d1f-bdd5-ee0daf4a2930/w800",
         "category": "Laptops",
-        "price": 1200,
+        "price": 600,
         "description": "Lightweight laptop with long battery life.",
         "Specification": [
             "14-inch display",
@@ -36,7 +36,7 @@
         "product_title": "Smartphone Z",
         "product_image": "https://image01.oneplus.net/media/202409/24/07643db2d15e1fb0284f9b0885cb2d76.png?x-amz-process=image/format,webp/quality,Q_80",
         "category": "Phones",
-        "price": 900,
+        "price": 190,
         "description": "Flagship smartphone with impressive camera and display.",
         "Specification": [
             "6.8-inch display",
@@ -51,7 +51,7 @@
         "product_title": "Budget Smartphone",
         "product_image": "https://image01.oneplus.net/media/202405/28/5c365ea6e4397dc82d0260a81ae5e5e8.png?x-amz-process=image/format,webp/quality,Q_80",
         "category": "Phones",
-        "price": 200,
+        "price": 180,
         "description": "Affordable smartphone with all essential features.",
         "Specification": [
             "6.1-inch display",
@@ -126,7 +126,7 @@
         "product_title": "MacBook Air M1",
         "product_image": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/mba15-midnight-select-202306?wid=904&hei=840&fmt=jpeg&qlt=90&.v=1684518479433",
         "category": "MacBooks",
-        "price": 999,
+        "price": 599,
         "description": "Lightweight MacBook with M1 chip and long battery life.",
         "Specification": [
             "13.3-inch Retina display",
@@ -141,7 +141,7 @@
         "product_title": "MacBook Pro M1",
         "product_image": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/mba15-starlight-select-202306?wid=904&hei=840&fmt=jpeg&qlt=90&.v=1684518479450",
         "category": "MacBooks",
-        "price": 1299,
+        "price": 899,
         "description": "Powerful MacBook with M1 chip for intensive tasks.",
         "Specification": [
             "13.3-inch Retina display",
@@ -156,7 +156,7 @@
         "product_title": "iPhone 14 Pro",
         "product_image": "https://www.apple.com/v/iphone-16-pro/c/images/overview/product-viewer/iphone-pro/black_titanium__ezezv5esulua_large.jpg",
         "category": "iPhones",
-        "price": 999,
+        "price": 799,
         "description": "High-end iPhone with advanced camera and display.",
         "Specification": [
             "6.1-inch OLED display",
@@ -217,7 +217,7 @@
         "product_title": "MacBook Pro 16",
         "product_image": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/mba15-silver-select-202306?wid=904&hei=840&fmt=jpeg&qlt=90&.v=1684518479266",
         "category": "MacBooks",
-        "price": 2399,
+        "price": 999,
         "description": "High-performance MacBook Pro with large display.",
         "Specification": [
             "16-inch Retina display",

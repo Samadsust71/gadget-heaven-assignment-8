@@ -1,4 +1,4 @@
-import { Link, NavLink, useLocation } from "react-router-dom";
+import { Link, NavLink, useLocation, useNavigate } from "react-router-dom";
 import { AiOutlineShoppingCart } from "react-icons/ai";
 import { CiHeart } from "react-icons/ci";
 import { useContext } from "react";
@@ -7,6 +7,7 @@ import { CartWishlistContext } from "../context/CartWishlistContext";
 const Navbar = () => {
   const {pathname}=useLocation()
   const {cart,wishList}= useContext(CartWishlistContext)
+  const navigate= useNavigate()
  
  
   return (
@@ -80,7 +81,7 @@ const Navbar = () => {
                        }
                       `
                     }>
-              About Us
+              Sign Up
             </NavLink>
            
             
@@ -136,13 +137,13 @@ const Navbar = () => {
                        }
                       `
                     }>
-             About Us
+             Sign Up
             </NavLink>
         </ul>
       </div>
       <div className="navbar-end space-x-4 text-2xl">
-        <button className="p-2 bg-white rounded-full text-gray-700 flex">{<AiOutlineShoppingCart/>} <span className="text-xs font-semibold text-[#9538E2]">{cart.length}</span> </button>
-        <button className="p-2 bg-white rounded-full text-gray-700 flex">{<CiHeart />} <span className="text-xs font-semibold text-[#9538E2]">{wishList.length}</span> </button>
+        <button onClick={()=>navigate("/dashboard")} className="p-2 bg-white rounded-full text-gray-700 flex"><span>{<AiOutlineShoppingCart/>}</span> <span className="text-xs font-semibold text-[#9538E2]">{cart.length}</span> </button>
+        <button onClick={()=>navigate('/dashboard')} className="p-2 bg-white rounded-full text-gray-700 flex justify-center"><span>{<CiHeart />}</span> <span className="text-xs font-semibold text-[#9538E2]">{wishList.length}</span> </button>
       </div>
     </div>
     
