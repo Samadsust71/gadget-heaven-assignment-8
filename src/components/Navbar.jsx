@@ -33,7 +33,7 @@ const Navbar = () => {
           </div>
           <ul
             tabIndex={0}
-            className={`menu menu-sm dropdown-content bg-[#9538E2] rounded-box z-[1] mt-3 w-52 p-2 shadow space-y-4 ${ pathname==='/'?"text-white bg-[#9538E2]":'text-black bg-base-100'} `}
+            className={`menu menu-sm dropdown-content transition duration-100 bg-[#9538E2] rounded-box z-[1] mt-3 w-52 p-2 shadow space-y-4 ${ pathname==='/'?"text-white bg-[#9538E2]":'text-black bg-base-100'} `}
           >
             <NavLink to={'/'} className={({ isActive}) =>
                       `
@@ -90,7 +90,7 @@ const Navbar = () => {
         <Link to={'/'} className="text-xl font-bold">Gadget Heaven</Link>
       </div>
       <div className="navbar-center hidden lg:flex">
-        <ul className="menu menu-horizontal px-1 space-x-4">
+        <ul className="menu menu-horizontal px-1 space-x-4 transition duration-100">
         <NavLink to={'/'} className={({ isActive}) =>
                       `
         ${

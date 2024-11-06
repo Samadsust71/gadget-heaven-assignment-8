@@ -4,7 +4,7 @@
 
 **Live Website:**  https://gadgetheaven71.netlify.app/
 
-**Requirement Document:** file:///C:/Users/ABDUL%20FAHAD/Downloads/Batch-10_Assignment-08-.pdf
+**Requirement Document:** https://github.com/Samadsust71/assignment-requirements/blob/main/Batch-10_Assignment-08-.pdf
 
 ---
 

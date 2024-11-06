@@ -15,7 +15,7 @@ const Banner = () => {
         </p>
         <button onClick={()=>navigate('/dashboard')} className='mt-6 mb-24 px-6 py-3 rounded-3xl bg-white text-[#9538E2] font-bold cursor-pointer'>Shop Now</button>
       </div>
-      <div className='w-[50%] rounded-xl p-3 border bg-transparent backdrop-blur-xl lg:absolute translate-y-3/4'>
+      <div className='w-[50%] rounded-xl p-3 border bg-transparent backdrop-blur-xl lg:absolute translate-y-3/4 transition duration-100'>
         <img src={bannerImage} alt="Banner image" className='rounded-xl' />
       </div>
     </div>
