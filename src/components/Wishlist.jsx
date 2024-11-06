@@ -1,11 +1,13 @@
-import { useEffect, useState } from "react";
-import { getWishListData } from "../utility/utilities";
+import { useContext, useEffect, useState } from "react";
+import { getWishListData, removeWishListItem } from "../utility/utilities";
 import WishlistProduct from "./WishlistProduct";
 import { useLoaderData } from "react-router-dom";
+import { CartWishlistContext } from "../context/CartWishlistContext";
 
 const Wishlist = () => {
   const allData = useLoaderData();
   const [WishlistProducts, setWishlistProducts] = useState([]);
+  const {addToWishlist}=useContext(CartWishlistContext)
 
   useEffect(() => {
     const wishlistData = getWishListData();
@@ -14,6 +16,32 @@ const Wishlist = () => {
     );
     setWishlistProducts(allWishListData);
   }, [allData]);
+
+  const handleDeleteItem =(id)=>{
+
+
+    const cartItemsWithoutCurrent = WishlistProducts.filter(
+      (products) => products.product_id !== id
+    );
+    // const currentCartItem = WishlistProducts.filter((product) => product.product_id === id);
+    // const deletedCartItem = WishlistProducts.find((product) => product.product_id === id);
+    
+
+    // if (currentCartItem.length <= 1) {
+      setWishlistProducts(cartItemsWithoutCurrent);
+    // } else {
+    //   const updatedSameCartItems = currentCartItem.slice(1); 
+    //   const updatedCartItems = [
+    //     ...cartItemsWithoutCurrent,
+    //     ...updatedSameCartItems,
+    //   ];
+      // setWishlistProducts(updatedCartItems);
+      
+      
+    // }
+    removeWishListItem(id)
+    addToWishlist()
+  }
   return (
     <div className="mt-10">
       <div>
@@ -22,7 +50,7 @@ const Wishlist = () => {
         </div>
         <div className="space-y-8 my-10">
           {WishlistProducts.map((product) => (
-            <WishlistProduct key={product.product_id} product={product} />
+            <WishlistProduct key={product.product_id}  handleDeleteItem ={ handleDeleteItem } product={product} />
           ))}
         </div>
       </div>

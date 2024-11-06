@@ -142,8 +142,8 @@ const Navbar = () => {
         </ul>
       </div>
       <div className="navbar-end space-x-4 text-2xl">
-        <button onClick={()=>navigate("/dashboard")} className="p-2 bg-white rounded-full text-gray-700 flex"><span>{<AiOutlineShoppingCart/>}</span> <span className="text-xs font-semibold text-[#9538E2]">{cart.length}</span> </button>
-        <button onClick={()=>navigate('/dashboard')} className="p-2 bg-white rounded-full text-gray-700 flex justify-center"><span>{<CiHeart />}</span> <span className="text-xs font-semibold text-[#9538E2]">{wishList.length}</span> </button>
+        <button onClick={()=>navigate("/dashboard")} className="h-10 w-10 px-4 py-3 bg-white rounded-full text-gray-700 flex justify-center"><span>{<AiOutlineShoppingCart/>}</span> <span className="text-xs font-semibold text-[#9538E2]">{cart.length}</span> </button>
+        <button onClick={()=>navigate('/dashboard')} className="h-10 w-10 px-4 py-3 bg-white rounded-full text-gray-700 flex justify-center"><span>{<CiHeart />}</span> <span className="text-xs font-semibold text-[#9538E2]">{wishList.length}</span> </button>
       </div>
     </div>
     

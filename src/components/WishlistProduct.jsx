@@ -3,8 +3,8 @@ import PropTypes from "prop-types"
 
 
 
-const WishlistProduct = ({product}) => {
-    const {product_title,description,price,product_image}=product
+const WishlistProduct = ({product, handleDeleteItem }) => {
+    const {product_id,product_title,description,price,product_image}=product
     return (
       <div className="flex justify-between p-8 rounded-xl bg-white">
         <div className="flex gap-8">
@@ -15,17 +15,18 @@ const WishlistProduct = ({product}) => {
               <h3 className="text-2xl font-semibold text-gray-900">{product_title}</h3>
               <p className="text-gray-600">{description}</p>
               <p className="text-xl text-gray-900 font-semibold">Price : ${price}</p>
-              <button className="px-5 py-3 rounded-full bg-[#9538E2] text-white">Add to Cart</button>
+              <button  className="px-5 py-3 rounded-full bg-[#9538E2] text-white">Add to Cart</button>
            </div>
         </div>
-        <div className="text-red-400 text-4xl font-light">
+        <button onClick={()=> handleDeleteItem (product_id)} className="text-red-400 text-4xl font-light">
         <TiDeleteOutline />
-        </div>
+        </button>
       </div>
     )
 }
 WishlistProduct.propTypes ={
-    product:PropTypes.object
+    product:PropTypes.object,
+    handleDeleteItem :PropTypes.func
 }
 
 export default WishlistProduct

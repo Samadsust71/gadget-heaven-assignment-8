@@ -1,4 +1,4 @@
-// import { toast } from "react-toastify";
+
 import { toast } from "react-hot-toast";
 
 const getCartData = () => {
@@ -23,16 +23,6 @@ const addCartDataToDB = (id)=>{
        localStorage.setItem('cart',dataInJsonFormat)
        toast.success(`Added to the cart`)
 
-
-    // if (getDataFromDB.includes(id)) {
-    //     return toast.error(`Already added to the cart`)
-    // }
-    // else{
-    //    getDataFromDB.push(id)
-    //    const dataInJsonFormat = JSON.stringify(getDataFromDB)
-    //    localStorage.setItem('cart',dataInJsonFormat)
-    //    toast.success(`Added to the cart`)
-    // }
 }
 const addWishListDataToDB = (id)=>{
     const getDataFromDB = getWishListData()
@@ -58,10 +48,19 @@ const removedCartItem = (id) => {
   } else {
     localStorage.setItem("cart", JSON.stringify(remainingItems));
   }
+  toast.error('Item removed from the Cart')
 };
+const removeWishListItem =(id)=>{
+  const wishList = getWishListData();
+  const remainingItems =  wishList.filter(idx => idx !== id);
+  localStorage.setItem("wishlist", JSON.stringify(remainingItems));
+  toast.error('Item removed from the Wish List')
+  
+
+}
 const clearCartItems = ()=>{
   localStorage.removeItem('cart')
 }
 
 
-export {getCartData,getWishListData,addCartDataToDB,addWishListDataToDB,removedCartItem,clearCartItems}
+export {getCartData,getWishListData,addCartDataToDB,addWishListDataToDB,removedCartItem,clearCartItems,removeWishListItem }
