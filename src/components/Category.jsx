@@ -14,7 +14,7 @@ const Category = ({category}) => {
          ${
           isActive
           ? "bg-[#9538E2] font-semibold text-white"
-          : "bg-base-200 text-gray-600"
+          : "bg-gray-200 text-gray-600"
          }
         `
       }>

@@ -1,5 +1,5 @@
 import { useContext, useEffect, useState } from "react";
-import { getWishListData, removeWishListItem } from "../utility/utilities";
+import { addCartDataToDB, getWishListData, removeWishListItem } from "../utility/utilities";
 import WishlistProduct from "./WishlistProduct";
 import { useLoaderData } from "react-router-dom";
 import { CartWishlistContext } from "../context/CartWishlistContext";
@@ -7,7 +7,7 @@ import { CartWishlistContext } from "../context/CartWishlistContext";
 const Wishlist = () => {
   const allData = useLoaderData();
   const [WishlistProducts, setWishlistProducts] = useState([]);
-  const {addToWishlist}=useContext(CartWishlistContext)
+  const {addToWishlist,addToCart}=useContext(CartWishlistContext)
 
   useEffect(() => {
     const wishlistData = getWishListData();
@@ -27,6 +27,11 @@ const Wishlist = () => {
     removeWishListItem(id)
     addToWishlist()
   }
+  const handleAddToCart = (id)=>{
+    addCartDataToDB(id)
+    addToCart(id)
+    handleDeleteItem(id)
+}
   return (
     <div className="mt-10">
       <div>
@@ -35,7 +40,7 @@ const Wishlist = () => {
         </div>
         <div className="space-y-8 my-10">
           {WishlistProducts.map((product) => (
-            <WishlistProduct key={product.product_id}  handleDeleteItem ={ handleDeleteItem } product={product} />
+            <WishlistProduct key={product.product_id} handleAddToCart={handleAddToCart} handleDeleteItem ={ handleDeleteItem } product={product} />
           ))}
         </div>
       </div>

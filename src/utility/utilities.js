@@ -54,7 +54,7 @@ const removeWishListItem =(id)=>{
   const wishList = getWishListData();
   const remainingItems =  wishList.filter(idx => idx !== id);
   localStorage.setItem("wishlist", JSON.stringify(remainingItems));
-  toast.error('Item removed from the Wish List')
+  
   
 
 }

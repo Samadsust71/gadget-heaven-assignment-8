@@ -12,7 +12,7 @@ const Navbar = () => {
  
   return (
     
-        <div className={`navbar rounded-t-xl pt-3 mx-auto ${ pathname==='/'?"bg-[#9538E2] text-white mt-3 lg:w-[98%] lg:px-28":'bg-gray-100 lg:w-11/12'}`}>
+        <div className={`navbar rounded-t-xl pt-3 mx-auto ${ pathname==='/'||pathname.includes('/products')?"bg-[#9538E2] text-white mt-3 lg:w-[98%] lg:px-28":'bg-gray-100 lg:w-11/12'}`}>
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -33,14 +33,14 @@ const Navbar = () => {
           </div>
           <ul
             tabIndex={0}
-            className={`menu menu-sm dropdown-content transition duration-100 bg-[#9538E2] rounded-box z-[1] mt-3 w-52 p-2 shadow space-y-4 ${ pathname==='/'?"text-white bg-[#9538E2]":'text-black bg-base-100'} `}
+            className={`menu menu-sm dropdown-content transition duration-100 bg-[#9538E2] rounded-box z-[1] mt-3 w-52 p-2 shadow space-y-4 ${ pathname==='/'||pathname.includes('/products')?"text-white bg-[#9538E2]":'text-black bg-base-100'} `}
           >
             <NavLink to={'/'} className={({ isActive}) =>
                       `
                        ${
-                        pathname==="/"?
+                        (pathname==='/'||pathname.includes('/products')) ?
                         isActive
-                        ? "text-white font-semibold"
+                        ? "text-white font-semibold underline"
                         : ""
                         :isActive
                         ? "text-[#9538E2] font-semibold"
@@ -94,7 +94,7 @@ const Navbar = () => {
         <NavLink to={'/'} className={({ isActive}) =>
                       `
         ${
-          pathname==="/"?
+          pathname==='/'||pathname.includes('/products')?
           isActive
           ? "text-white font-semibold underline"
           : ""
@@ -142,8 +142,8 @@ const Navbar = () => {
         </ul>
       </div>
       <div className="navbar-end space-x-4 text-2xl">
-        <button onClick={()=>navigate("/dashboard")} className="h-10 w-10 px-4 py-3 bg-white rounded-full text-gray-700 flex justify-center"><span>{<AiOutlineShoppingCart/>}</span> <span className="text-xs font-semibold text-[#9538E2]">{cart.length}</span> </button>
-        <button onClick={()=>navigate('/dashboard')} className="h-10 w-10 px-4 py-3 bg-white rounded-full text-gray-700 flex justify-center"><span>{<CiHeart />}</span> <span className="text-xs font-semibold text-[#9538E2]">{wishList.length}</span> </button>
+        <button onClick={()=>navigate("/dashboard/cart")} className="h-10 w-10 px-4 py-3 bg-white rounded-full text-gray-700 flex justify-center"><span>{<AiOutlineShoppingCart/>}</span> <span className="text-xs font-semibold text-[#9538E2]">{cart.length}</span> </button>
+        <button onClick={()=>navigate('/dashboard/wishlist')} className="h-10 w-10 px-4 py-3 bg-white rounded-full text-gray-700 flex justify-center"><span>{<CiHeart />}</span> <span className="text-xs font-semibold text-[#9538E2]">{wishList.length}</span> </button>
       </div>
     </div>
     

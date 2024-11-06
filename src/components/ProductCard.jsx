@@ -6,7 +6,7 @@ const ProductCard = ({ product }) => {
   return (
     <div className="bg-base-100 w-full shadow-xl p-6 rounded-xl space-y-4">
       <div className='flex justify-center items-center'>
-        <img src={product_image} alt="Shoes" className="rounded-xl h-32" />
+        <img src={product_image} alt={`image of ${product_title}`} className="rounded-xl h-32" />
       </div>
       <div className="flex flex-col gap-3">
         <h3 className='font-bold flex-grow'>{product_title}</h3>
