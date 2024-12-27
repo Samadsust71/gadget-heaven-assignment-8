@@ -41,7 +41,7 @@ const removedCartItem = (id) => {
   const cart = getCartData();
   const matchingItems = cart.filter(idx => idx === id);
   const remainingItems = cart.filter(idx => idx !== id);
-
+  
   if (matchingItems.length > 1) {
     const updatedCart = [...remainingItems, ...matchingItems.slice(1)];
     localStorage.setItem("cart", JSON.stringify(updatedCart));
@@ -50,6 +50,8 @@ const removedCartItem = (id) => {
   }
   toast.error('Item removed from the Cart')
 };
+
+
 const removeWishListItem =(id)=>{
   const wishList = getWishListData();
   const remainingItems =  wishList.filter(idx => idx !== id);
